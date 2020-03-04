@@ -74,7 +74,7 @@
             ```bash
             $ screenfetch -h
             ```
-   * `htop` installation and additional info about work with it:
+   * [`htop`](http://linux-bash.ru/menusistem/79-htop.html) installation and additional info about work with it:
         * Installation `htop`:
         
         ```bash
@@ -87,3 +87,43 @@
             ```bash
             $ htop
             ```  
+            
+            * Columns:
+                * **PID** - process id;
+                * **USER** - process owner.
+                * **PRI** - current priority (affect on process time, allotted process, default value - 20; than less priority, then more time allotting on process, therefore it runs faster).
+                * **NI** - priority change amount regarding PRI value (F7, F8 keys).
+                * **VIRT** - general virtual memory size,that using process.
+                * **DATA** - memory size, that filling data, which using process in runtime.
+                * **SWAP** - memory size, that using process, but moving at swap area.
+                * **RES** - the amount of resident (not swapable) memory in kilobytes.
+                * **SHR** - the amount of shared program memory in kilobytes, so that memory, which can be using other applications. 
+                
+                * **S** - process state:
+                * **S** - so named "sleep state";
+                * **R** - "running state";
+                * **D** - "waiting state";
+                
+                * **CPU%** - CPU usage as a percentage.
+                * **MEM%** - memory usage by percentage.
+                * **TIME+** - process time.
+                * **Command** - indicates the command by which the process was started.
+                
+                Also next params are outputting on the screen:
+                
+                * **Load average** - displaying count of blocking processes in the execution queue at a certain time interval, namely 1, 5 and 15 minutes, respectively.
+                Blocking process is a process, that waits resources for continue work.
+                * **Uptime** - system work time.
+                
+            * Control:
+            
+                * **F1** - help desk;
+                * **F2** - settings;
+                * **F3** - find process;
+                * **F4** - process list sorting (from more to less or from less to more);
+                * **F5** - set tree view and vice versa;
+                * **F6** - opens a panel with a choice of process sorting option;
+                * **F7** - increase an execution priority for current process;
+                * **F8** - decrease an execution priority for current process;
+                * **F9** - kill process;
+                * **F10** - quit from program.
